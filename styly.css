@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1vw;
+}
+
+:root {
+  --hlavni-barva: #F03000;
+}
+
+
+.navigace__polozka,
+.pruh-polozka__nazev {
+  color: var(--hlavni-barva);
+  font-weight: 1000;
+}
+
+.hlavicka,
+.navigace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigace__polozka {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+}
+
+.navigace__polozka:hover,
+.nabidka-polozka__cena {
+  background-color: var(--hlavni-barva);
+  color: white;
+}
+
+.hlavicka,
+.nabidka {
+  margin: 1em;
+}
+
+
+
+.nabidka-zajezdy {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2, 1fr;
+  gap: 10px;
+  aspect-ratio: 3 / 1;
+}
+
+.nabidka--vlevo :nth-child(1) {
+  grid-column: 1 / 3; 
+  grid-row: 1 / 3;
+  
+}
+
+.nabidka--vpravo :nth-child(3) {
+  grid-column: -3 /-1;
+  grid-row: 1 / 3;
+}
+
+.polozka--prvni {
+  background-image: url('podklady/palmy.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.polozka--druha {
+  background-image: url('podklady/jezero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.polozka--treti {
+  background-image: url('podklady/nakole.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.nabidka-polozka {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-height: 100%;
+  padding: 1em;
+}
+
+
+
+.polozka--ctvrta {
+  background-image: url('podklady/podkova.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.polozka--pata {
+  background-image: url('podklady/zatoka.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.polozka--sesta {
+  background-image: url('podklady/lodicka.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.nabidka-polozka__cena {
+  padding: 0.5em;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.nabidka-polozka__popis,
+.nabidka-polozka__nadpis2,
+.nabidka-polozka__popisek {
+  color:white;
+  margin-bottom: 0;
+}
+
+.nabidka-polozka__nadpis {
+  font-size: min(2vw, 15px);
+}
+
+.nabidka-polozka__nadpis2 {
+  font-size: min(1.5vw, 10px);
+}
+.nabidka-polozka__popisek {
+  font-size: min(1vw, 10px);
+}
+
+.nabidka-nazev,
+.novinky-nazev {
+  font-weight: bolder;
+}
+
+.novinky-nazev {
+  margin-bottom: 0;
+  margin-left: 0.7em;
+}
+
+.pruh-polozka__text {
+  font-weight: bolder;
+}
+
+.pruh {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pruh-polozka {
+  background-color: rgb(228, 227, 227);
+  margin: 1em;
+  padding: 1em;
+}
+
+.pruh--stred {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(47, 48, 48);
+  color: white;
+  margin: 1em;
+  padding: 2em;
+}
+
