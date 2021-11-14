@@ -18,7 +18,7 @@ body {
 
 
 .navigace__polozka,
-.pruh-polozka__nazev {
+.pruh__polozka--nazev {
   color: var(--hlavni-barva);
   font-weight: 1000;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .navigace__polozka:hover,
-.nabidka-polozka__cena {
+.nabidka__polozka--cena {
   background-color: var(--hlavni-barva);
   color: white;
 }
@@ -87,7 +87,7 @@ body {
   background-position: center;
 }
 
-.nabidka-polozka {
+.nabidka__polozka {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,41 +116,41 @@ body {
   background-position: center;
 }
 
-.nabidka-polozka__cena {
+.nabidka__polozka--cena {
   padding: 0.5em;
   font-size: 0.7em;
   margin: 0;
 }
 
-.nabidka-polozka__popis,
-.nabidka-polozka__nadpis2,
-.nabidka-polozka__popisek {
+.nabidka__polozka--popis,
+.nabidka__polozka--nadpis2,
+.nabidka__polozka--popisek {
   color:white;
   margin-bottom: 0;
 }
 
-.nabidka-polozka__nadpis {
+.nabidka__polozka--nadpis {
   font-size: min(2vw, 15px);
 }
 
-.nabidka-polozka__nadpis2 {
+.nabidka__polozka--nadpis2 {
   font-size: min(1.5vw, 10px);
 }
-.nabidka-polozka__popisek {
+.nabidka__polozka--popisek {
   font-size: min(1vw, 10px);
 }
 
-.nabidka-nazev,
-.novinky-nazev {
+.nabidka--nazev,
+.novinky--nazev {
   font-weight: bolder;
 }
 
-.novinky-nazev {
+.novinky--nazev {
   margin-bottom: 0;
   margin-left: 0.7em;
 }
 
-.pruh-polozka__text {
+.pruh__polozka--text {
   font-weight: bolder;
 }
 
@@ -159,7 +159,7 @@ body {
   justify-content: space-around;
 }
 
-.pruh-polozka {
+.pruh__polozka {
   background-color: rgb(228, 227, 227);
   margin: 1em;
   padding: 1em;
